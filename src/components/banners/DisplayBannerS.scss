@@ -1,0 +1,26 @@
+@import '../../helpers/mixins.scss';
+@import '../../helpers/animations.scss';
+
+
+.display-banner-s {
+
+
+    h1 {
+        font-weight: bolder;
+        color: white;
+        // font-size: 4rem;        
+    }
+
+    p {
+        // font-size: 1.2rem;
+        color: white;
+        font-weight: normal;
+        // line-height: 2rem;        
+
+        span {
+            // font-size: 1.5rem;
+        }
+    }
+    
+}
+

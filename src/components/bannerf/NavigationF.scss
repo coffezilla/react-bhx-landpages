@@ -1,0 +1,124 @@
+@import '../../helpers/mixins.scss';
+@import '../../helpers/animations.scss';
+
+.component-nav-f {
+
+
+    
+    .navbar-brand {
+        img {
+            height: 40px;
+            width: auto;
+        }
+    }
+
+    li.nav-item {
+        font-size: 1.4rem;
+
+        a.nav-link {
+            color: white;
+            opacity: .8;
+
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
+    
+
+    // BUG: Bootstrap .collapse add flex-grow:1 so if you don't redefine grow, the justify-content-x of the nav will not set appropriately
+    .collapse {
+        flex-grow: initial;
+    }
+    
+    @media #{ $xs, $sm } {  
+
+        .navbar {
+            // background-color: white;
+            padding: 0px 2rem;
+
+            .navbar-brand {
+                padding: 0;
+                img {
+                    height: 3rem;
+                    width: auto;
+                }
+            }
+
+            .navbar-toggler {
+                color: white;
+                padding: 0px;
+                font-size: 2rem;
+                .navbar-toggler-open-icon {
+                    display: block;
+                }
+                .navbar-toggler-close-icon {
+                
+                    display: none;
+                }            
+            }
+            
+            .navbar-toggler.collapsed  {
+                .navbar-toggler-open-icon {
+                    display: none;
+                }
+                .navbar-toggler-close-icon {
+                    
+                    display: block;
+                }                 
+            }        
+
+            .navbar-collapse {
+
+
+                ul.nav {
+
+                    margin: 0rem;
+                    padding: 0;
+                    width: 100%;
+                    
+                    
+                    li.nav-item {
+                        width: 100%;
+                        border-bottom: 1px solid #ffffff26;
+                        
+                        a.nav-link {
+                            font-size: 1.4rem;
+                            margin: 0px !important;
+                            background: transparent;
+                            color: #fff;
+                            padding: 0.7rem 0px;
+                            border-radius: 0;
+                            border: none;
+                            
+                            &:hover {
+                                background-color: inherit;
+                            }
+                            
+                            &:active {
+                                color: #fff;
+                            }
+                            
+                        }
+                        
+
+                    }
+                    
+                }   
+            }
+
+            .navbar {
+                background-color: #00000014;
+                &:last-child {
+                    // border-bottom: 1px solid #dedede;
+                    
+                    li {
+                        &:last-child {
+                            border: none !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

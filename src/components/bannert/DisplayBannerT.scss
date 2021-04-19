@@ -1,0 +1,52 @@
+@import '../../helpers/mixins.scss';
+@import '../../helpers/animations.scss';
+
+
+.display-banner-t {
+
+
+    h1 {
+        font-weight: bolder;
+        color: #030019;
+        // font-size: 4rem;        
+    }
+
+    p {
+        // font-size: 1.3rem;
+        color: #878787;
+        font-weight: normal;
+        // line-height: 2rem;        
+    }
+
+    .bt-primary--banner {
+        background-color: #FFD203;
+        border: none;
+        color: #342D0A;
+        padding: 15px 30px;
+        border-radius: 50px;
+        text-decoration: none;
+        line-height: 27px;
+
+        &:hover {
+            background-color: #ffda2e;
+        }
+        
+    }
+    
+    .bt-secundary--banner {
+        background-color: transparent;
+        border: 2px solid #1D86FF;
+        color: #1D86FF;
+        padding: 15px 30px;
+        border-radius: 50px;
+        text-decoration: none;
+        line-height: 27px;
+        
+        &:hover {
+            background-color: #1D86FF;
+            color: white;
+        }
+    }
+
+}
+

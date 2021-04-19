@@ -1,0 +1,49 @@
+@import '../../helpers/mixins.scss';
+@import '../../helpers/animations.scss';
+
+
+.display-banner-p {
+
+
+    img {
+        max-width: 100%;
+    }
+
+    h1 {
+        color: #2B2B2B;
+        // font-size: 3rem; 
+        font-weight: bolder;       
+    }
+    
+    p {
+        // font-size: 1.1rem;
+        color: #2B2B2B;
+        font-weight: normal;
+        // line-height: 2rem;        
+    }
+    
+    button.bt-primary {
+        border: none;
+        color: white;
+        background-color: #0756F2;
+        padding: 18px 35px;
+        @include border-radius(45px);
+        border-radius: 42px;
+        // font-size: 1.1rem;
+        
+        &:hover {
+            background-color: #1a64f8;
+        }
+    }
+
+
+    @media #{ $xs, $sm, $md } {  
+
+        button.bt-primary { 
+            width: 100%;
+        }
+
+    }
+
+}
+

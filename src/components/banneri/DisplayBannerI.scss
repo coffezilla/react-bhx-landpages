@@ -1,0 +1,57 @@
+@import '../../helpers/mixins.scss';
+@import '../../helpers/animations.scss';
+
+
+.display-banner-i {
+    position: relative;
+    
+    &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        bottom: -1px;
+        background-repeat: no-repeat;
+        background-image: url('/images/svg-bottom-notch.svg');
+        background-position: center bottom;
+
+        width: 110px;
+        height: 42px;
+        left: 47%;
+
+    }
+
+
+
+    h1 {
+        color: white;
+        font-size: 1.4rem;   
+        line-height: 1.8rem;
+    }
+
+    p {
+        color: white;
+        font-weight: lighter;
+    }
+    
+    button.bt-download {
+        border: none;
+        padding: 0;
+        background-color: transparent;
+        border: 2px solid transparent;
+        @include border-radius(10px);
+        @include transition(border-color .3s);
+    
+        &:hover {
+            border: 2px solid #ffffff54;
+            overflow: hidden;
+        }
+    }
+
+    .list-group-item {
+        padding: 0px;
+        margin: 0;
+    }    
+
+   
+}
+

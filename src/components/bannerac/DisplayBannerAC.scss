@@ -1,0 +1,41 @@
+@import '../../helpers/mixins.scss';
+@import '../../helpers/animations.scss';
+
+
+.display-banner-ac {
+
+    background-color: #FAFAFA;
+
+    
+    h1 {
+        // font-size: 3.2rem;
+        font-weight: bolder;  
+        span {
+            color: #878787;
+        }
+    }
+
+    p {
+        // font-size: 1.2rem;
+        font-weight: normal;
+        // line-height: 2rem;        
+    }
+
+
+    button.bt-primary {
+        @include border-radius(5px);
+        padding: 1rem 2rem;
+        // font-size: 1.2rem;
+        background-color: #4A9CFF;
+        color: white;
+        border: none;
+        
+        &:hover {
+            background-color: #5ca5ff;
+        }
+    }
+
+
+
+}
+

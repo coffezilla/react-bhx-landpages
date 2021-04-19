@@ -1,0 +1,14 @@
+@import '../../helpers/mixins.scss';
+@import '../../helpers/animations.scss';
+
+
+.component-primary-banner-d {
+    
+    // background-color: url('/images/background-dev.jpg');
+    // background-size: cover;
+    // background-position: center center;
+    background-color: #2CA0DF;
+    @include linear-hgradient(#2CA0DF, #1D78D4);
+
+}
+

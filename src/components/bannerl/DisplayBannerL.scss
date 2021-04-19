@@ -1,0 +1,52 @@
+@import '../../helpers/mixins.scss';
+@import '../../helpers/animations.scss';
+
+
+.display-banner-l {
+    position: relative;
+    
+    &:before {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 433px;
+        left: 0px;
+        bottom: -1px;
+        background-image: url('/images/svg-bottom-wave-3.svg');
+        background-position: center bottom;
+    }
+
+
+    h1 {
+        color: #252525;
+        // font-size: 3.5rem;
+        font-weight: bolder;     
+    }
+
+    p {
+        // font-size: 1.1rem;
+        color: gray;
+        font-weight: normal;
+        // line-height: 2rem;        
+    }
+    
+    button.bt-download {
+        border: none;
+        background: #5C52CC;
+        color: white;
+        @include border-radius(5px);
+        @include transition(background-color .3s);
+        // padding: 10px 30px;
+        padding: 1rem 2rem;
+        // font-size: 1.1rem;
+
+
+        &:hover {
+            background-color: #392ead;
+        }
+    }
+
+
+}
+

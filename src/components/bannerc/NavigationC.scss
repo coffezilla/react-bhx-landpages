@@ -1,0 +1,141 @@
+@import '../../helpers/mixins.scss';
+@import '../../helpers/animations.scss';
+
+.component-nav-c {
+
+    .navbar-brand {
+        img {
+            height: 2.4rem;
+            width: auto;
+        }
+    }
+
+    ul.nav {
+        padding: 0;
+    }
+    
+    li.nav-item {
+        font-size: 1.4rem;
+
+        a.nav-link {
+            color: #7d7d7d;
+
+            &:hover {
+                color: #4c4c4c;
+            }
+        }
+
+        span {
+            color: #d4d4d4;   
+            margin: 0;         
+        }
+
+        a.bt-primary--nav {
+            color: white;
+            padding: 1rem 2rem;
+            @include border-radius(30px);
+            background-color: #2681DC;
+            @include transition(background-color .3s);
+            
+            &:hover {
+                background-color: #3391f0;
+                color: white;
+            }
+        }
+    }
+
+
+    
+
+    @media #{ $xs, $sm } {  
+
+        .navbar {
+            background-color: white;
+            padding: 0px 2rem;
+
+            .navbar-brand {
+                padding: 0;
+
+            }
+
+            .navbar-toggler {
+                padding: 0px;
+                font-size: 2rem;
+                .navbar-toggler-open-icon {
+                    display: block;
+                }
+                .navbar-toggler-close-icon {
+                
+                    display: none;
+                }            
+            }
+            
+            .navbar-toggler.collapsed  {
+                .navbar-toggler-open-icon {
+                    display: none;
+                }
+                .navbar-toggler-close-icon {
+                    
+                    display: block;
+                }                 
+            }        
+
+            .navbar-collapse {
+
+
+                ul.nav {
+
+                    margin: 0rem;
+                    padding: 0;
+                    width: 100%;
+                    
+                    
+                    li.nav-item {
+                        width: 100%;
+                        border-bottom: 1px solid #e2e2e2;
+                        
+                        a.nav-link {
+                            font-size: 1.4rem;
+                            margin: 0px !important;
+                            background: transparent;
+                            color: #2196f3;
+                            padding: 0.7rem 0px;
+                            border-radius: 0;
+                            
+                            &:hover {
+                                background-color: inherit;
+                            }
+                            
+                            &:active {
+                                color: #2196f3;
+                            }
+                            
+                        }
+                        
+
+                    }
+                    
+                }   
+            }
+
+            .navbar {
+                &:last-child {
+                    border-bottom: 1px solid #dedede;
+                    
+                    li {
+                        &:last-child {
+                            border: none !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media #{ $xxl } {  
+        a.nav-link {
+            font-size: 1.6rem;
+        }
+    }
+
+}

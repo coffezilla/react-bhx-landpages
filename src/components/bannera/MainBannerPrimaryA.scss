@@ -1,0 +1,14 @@
+@import '../../helpers/mixins.scss';
+@import '../../helpers/animations.scss';
+
+
+.component-primary-banner-a {
+    
+    background-color: white;
+    background-image: url('/images/bg_dark_1.jpg'); 
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+}
+

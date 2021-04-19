@@ -1,0 +1,139 @@
+@import '../../helpers/mixins.scss';
+@import '../../helpers/animations.scss';
+
+.component-nav-b {
+
+    background: #ffffffde;
+    border-bottom: 1px solid #f3f3f3;
+    -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px); 
+    @include box-shadow(0px 3px 5px 0px #00000014);
+
+    .navbar-brand {
+        img {
+            height: 2.4rem;
+            width: auto;
+        }
+    }
+    
+    li.nav-item {
+        font-size: 1.4rem;
+        
+        a.nav-link {
+            color: #7d7d7d;
+
+            &:hover {
+                color: #4c4c4c;
+            }
+        }
+
+        a.bt-primary-nav {
+            background: #07D9D6;
+            @include linear-hgradient(#07D9D6, #21E3C2);
+            color: white;
+            @include transition(background-color .3s);
+            
+            &:hover {
+                background-color: #21E3C2;
+                color: white;
+            }
+        }
+    }
+
+    // BUG: Bootstrap .collapse add flex-grow:1 so if you don't redefine grow, the justify-content-x of the nav will not set appropriately
+    .collapse {
+        flex-grow: initial;
+    }
+    
+    @media #{ $xs, $sm } {  
+
+        .navbar {
+            padding: 0px 2rem;
+
+            .navbar-brand {
+                padding: 0;
+            }
+
+            .navbar-toggler {
+                color: #2196f3;
+                padding: 0px;
+                font-size: 2rem;
+                .navbar-toggler-open-icon {
+                    display: block;
+                }
+                .navbar-toggler-close-icon {
+                
+                    display: none;
+                }            
+            }
+            
+            .navbar-toggler.collapsed  {
+                .navbar-toggler-open-icon {
+                    display: none;
+                }
+                .navbar-toggler-close-icon {
+                    
+                    display: block;
+                }                 
+            }        
+
+            .navbar-collapse {
+
+
+                ul.nav {
+
+                    margin: 0rem;
+                    padding: 0;
+                    width: 100%;
+                    
+                    
+                    li.nav-item {
+                        width: 100%;
+                        border-bottom: 1px solid #e2e2e2;
+                        
+                        a.nav-link {
+                            font-size: 1.4rem;
+                            margin: 0px !important;
+                            background: transparent;
+                            color: #2196f3;
+                            padding: 1rem 0px;
+                            border-radius: 0;
+                            
+                            &:hover {
+                                background-color: inherit;
+                            }
+                            
+                            &:active {
+                                color: #2196f3;
+                            }
+                            
+                        }
+                        
+
+                    }
+                    
+                }   
+            }
+
+            .navbar {
+                background-color: #f3f3f3;
+                &:last-child {
+                    border-bottom: 1px solid #dedede;
+                    
+                    li {
+                        &:last-child {
+                            border: none !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media #{ $xxl } {  
+        a.nav-link {
+            font-size: 1.6rem;
+        }
+    }
+
+}

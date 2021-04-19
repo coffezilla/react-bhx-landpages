@@ -1,0 +1,31 @@
+@import '../../helpers/mixins.scss';
+@import '../../helpers/animations.scss';
+
+
+.display-banner-ab {
+    
+    
+    h1 {
+        color: white;
+        // font-size: 3.5rem;    
+
+    }
+
+    p {
+        font-weight: lighter;
+        color: white;
+        // line-height: 2rem;
+        // font-size: 1.2rem;    
+    }
+
+
+        .bt-signup--signup {
+            background-color: #FF8A00;
+            color: white; 
+            border: none;
+            border-radius: 5px;
+            padding: 13px 30px;
+        }
+
+}
+

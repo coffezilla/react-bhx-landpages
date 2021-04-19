@@ -1,0 +1,14 @@
+@import '../helpers/mixins.scss';
+@import '../helpers/animations.scss';
+
+
+// typograph
+$textPrimary: 'Roboto', sans-serif;
+$textSecondary: 'Arial Black';
+
+
+* {
+    font-family: $textPrimary;
+}
+
+

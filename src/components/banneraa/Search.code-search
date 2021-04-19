@@ -1,0 +1,134 @@
+# Query: localhost:3000
+# ContextLines: 1
+
+26 results - 26 files
+
+src/components/banneraa/DisplayBannerAA.scss:
+  16          bottom: -1px;
+  17:         background-image: url('/images/svg-bottom-triangule-3.svg');
+  18          background-position: center bottom;
+
+src/components/banneraa/MainBannerPrimaryAA.scss:
+  6      
+  7:     background-image: url('/images/background-dev.jpg');
+  8      background-size: cover;
+
+src/components/bannerac/MainBannerPrimaryAC.scss:
+  6      
+  7:     // background-color: url('/images/background-dev.jpg');
+  8      // background-size: cover;
+
+src/components/bannerad/DisplayBannerAD.scss:
+  15          bottom: -1px;
+  16:         background-image: url('/images/svg-bottom-circle.svg');
+  17          background-position: center bottom;
+
+src/components/bannerae/DisplayBannerAE.scss:
+  15          bottom: -1px;
+  16:         background-image: url('/images/svg-bottom-wave.svg');
+  17          background-position: center bottom;
+
+src/components/banneraf/DisplayBannerAF.scss:
+  15          bottom: -1px;
+  16:         background-image: url('/images/svg-bottom-triangule.svg');
+  17          background-position: center bottom;
+
+src/components/banneraf/MainBannerPrimaryAF.scss:
+  7      background-color: gray;
+  8:     background-image: url('/images/background-dev.jpg');
+  9      background-size: cover;
+
+src/components/bannerd/DisplayBannerD.scss:
+  17          bottom: -1px;
+  18:         background-image: url('/images/svg-bottom-right-triangule.svg');
+  19          background-position: center bottom;
+
+src/components/bannerd/MainBannerPrimaryD.scss:
+  6      
+  7:     // background-color: url('/images/background-dev.jpg');
+  8      // background-size: cover;
+
+src/components/bannere/DisplayBannerE.scss:
+  16              bottom: -1px;
+  17:             background-image: url('/images/svg-bottom-circle.svg');
+  18              background-position: center bottom;
+
+src/components/bannere/MainBannerPrimaryE.scss:
+  7      background-color: #585AC8;
+  8:     background-image: url('/images/background-dev.jpg');
+  9      background-size: cover;
+
+src/components/bannerf/DisplayBannerF.scss:
+  16          bottom: -1px;
+  17:         background-image: url('/images/svg-bottom-wave-4.svg');
+  18          background-position: center bottom;
+
+src/components/bannerg/DisplayBannerG.scss:
+  15          bottom: -1px;
+  16:         background-image: url('/images/svg-bottom-wave.svg');
+  17          background-position: center bottom;
+
+src/components/bannerh/MainBannerPrimaryH.scss:
+  7      background-color: #fff;
+  8:     background-image: url('/images/background-dev.jpg');
+  9      background-size: cover;
+
+src/components/banneri/DisplayBannerI.scss:
+  13          background-repeat: no-repeat;
+  14:         background-image: url('/images/svg-bottom-notch.svg');
+  15          background-position: center bottom;
+
+src/components/bannerj/DisplayBannerJ.scss:
+  15          bottom: -1px;
+  16:         background-image: url('/images/svg-bottom-wave-2.svg');
+  17          background-position: center bottom;
+
+src/components/bannerj/MainBannerPrimaryJ.scss:
+  6      
+  7:     background-image: url('/images/background-dev.jpg');
+  8      background-size: cover;
+
+src/components/bannerk/MainBannerPrimaryK.scss:
+  6      
+  7:     background-image: url('/images/background-dev.jpg');
+  8      background-size: cover;
+
+src/components/bannerl/DisplayBannerL.scss:
+  15          bottom: -1px;
+  16:         background-image: url('/images/svg-bottom-wave-3.svg');
+  17          background-position: center bottom;
+
+src/components/bannern/MainBannerPrimaryN.scss:
+  6      
+  7:     // background-color: url('/images/background-dev.jpg');
+  8      // background-size: cover;
+
+src/components/bannero/DisplayBannerO.scss:
+  25      .wrapper-bannner--cover {
+  26:         background-image: url('/images/background-dev.jpg');
+  27          background-position: center center;
+
+src/components/bannerq/MainBannerPrimaryQ.scss:
+  7      background-color: #234571;
+  8:     // background-image: url('/images/background-dev.jpg');
+  9      // background-size: cover;
+
+src/components/bannerr/MainBannerPrimaryR.scss:
+  6      
+  7:     background-image: url('/images/background-dev.jpg');
+  8      background-color: black;
+
+src/components/banneru/MainBannerPrimaryU.scss:
+  6      
+  7:     // background-color: url('/images/background-dev.jpg');
+  8      // background-size: cover;
+
+src/components/bannerx/DisplayBannerX.scss:
+  15          bottom: -1px;
+  16:         background-image: url('/images/svg-bottom-triangule-2.svg');
+  17          background-position: center bottom;
+
+src/components/bannerz/MainBannerPrimaryZ.scss:
+  6      
+  7:     // background-color: url('/images/background-dev.jpg');
+  8      // background-size: cover;

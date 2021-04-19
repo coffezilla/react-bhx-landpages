@@ -1,0 +1,168 @@
+/* 
+  
+  Mixins and Media Queries for Sass projects
+  Created by Renato Santos - renato@bhxsites.com.br
+
+*/
+
+//  Media Querie variables
+//  Ex: @media #{ $xs, $sm, $md } {  }
+$xs:  "only screen and (max-width: 576px)";
+$sm:  "only screen and (min-width: 577px) and (max-width: 767.98px)";
+$md:  "only screen and (min-width: 768.98px) and (max-width: 991.98px)";
+$lg:  "only screen and (min-width: 992.98px) and (max-width: 949px)";
+$xl:  "only screen and (min-width: 951px) and (max-width: 1199.98px)";
+$xxl:  "only screen and (min-width: 1200px) and (max-width: 9999.98px)";
+
+//  Rounded borders
+//  Ex: @include border-radius(10px 5px);
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+//  Drop shadows
+//  Ex: @include box-shadow(0px 0px 10px black);
+@mixin box-shadow ($shadow) {
+  -webkit-box-shadow: $shadow;
+     -moz-box-shadow: $shadow;
+          box-shadow: $shadow;
+}
+
+//  Linear gradient color from the top
+//  Ex: @include linear-hgradient(#000, #BADA55);
+@mixin linear-hgradient($fromColor, $toColor) {
+  background-color: $toColor; /* Fallback Color */
+  background-image: -webkit-gradient(linear, left top, right bottom, from($fromColor), to($toColor)); /* Saf4+, Chrome */
+  background-image: -webkit-linear-gradient(to top, $fromColor, $toColor); /* Chrome 10+, Saf5.1+, iOS 5+ */
+  background-image:    -moz-linear-gradient(to top, $fromColor, $toColor); /* FF3.6 */
+  background-image:     -ms-linear-gradient(to top, $fromColor, $toColor); /* IE10 */
+  background-image:      -o-linear-gradient(to top, $fromColor, $toColor); /* Opera 11.10+ */
+  background-image:         linear-gradient(to top, $fromColor, $toColor);
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#{$fromColor}', EndColorStr='#{$toColor}');
+}
+
+//  Linear gradient color from the left
+//  Ex: @include linear-lgradient(#000, #BADA55);
+@mixin linear-lgradient($fromColor, $toColor) {
+  background-color: $toColor; /* Fallback Color */
+  background-image: -webkit-gradient(linear, left top, left bottom, from($fromColor), to($toColor)); /* Saf4+, Chrome */
+  background-image: -webkit-linear-gradient(to left, $fromColor, $toColor); /* Chrome 10+, Saf5.1+, iOS 5+ */
+  background-image:    -moz-linear-gradient(to left, $fromColor, $toColor); /* FF3.6 */
+  background-image:     -ms-linear-gradient(to left, $fromColor, $toColor); /* IE10 */
+  background-image:      -o-linear-gradient(to left, $fromColor, $toColor); /* Opera 11.10+ */
+  background-image:         linear-gradient(to left, $fromColor, $toColor);
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#{$fromColor}', EndColorStr='#{$toColor}');
+}
+
+//  Radial gradient color from the center
+//  Ex: @include radial-gradient(#555A5F, #000);
+@mixin radial-gradient($from, $to) {
+  background: -moz-radial-gradient(center, circle cover, $from 0%, $to 100%);
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, $from), color-stop(100%, $to));
+  background: -webkit-radial-gradient(center, circle cover, $from 0%, $to 100%);
+  background: -o-radial-gradient(center, circle cover, $from 0%, $to 100%);
+  background: -ms-radial-gradient(center, circle cover, $from 0%, $to 100%);
+  background: radial-gradient(center, circle cover, $from 0%, $to 100%);
+  background-color: $from;
+}
+
+//  Transition
+//  Ex: @include transition(background-color .3s)
+@mixin transition($transicao) {  
+  -moz-transition: $transicao;
+  -webkit-transition: $transicao;
+  -o-transition: $transicao;
+  transition: $transicao;
+}
+
+
+//  Transform
+//  Ex: @include transform();
+@mixin transform($transforms) {
+     -moz-transform: $transforms;
+       -o-transform: $transforms;
+      -ms-transform: $transforms;
+  -webkit-transform: $transforms;
+          transform: $transforms;
+}
+
+//  Rotate transform
+//  Ex: @include rotate(45);
+@mixin rotate ($deg) {
+  @include transform(rotate(#{$deg}deg));
+}
+ 
+//  Scale transform
+//  Ex: @include scale(4.5);
+@mixin scale($scale) {
+   @include transform(scale($scale));
+} 
+
+//  Translate transform
+//  Ex: @include translate(10px, 100px);
+@mixin translate ($x, $y) {
+   @include transform(translate($x, $y));
+}
+
+//  Skew transform
+//  Ex: @include skew(1,2);
+@mixin skew ($x, $y) {
+   @include transform(skew(#{$x}deg, #{$y}deg));
+}
+
+//  Transform Origin
+//  Ex: @include transform();
+@mixin transform-origin ($origin) {
+    moz-transform-origin: $origin;
+       -o-transform-origin: $origin;
+      -ms-transform-origin: $origin;
+  -webkit-transform-origin: $origin;
+          transform-origin: $origin;
+}
+
+//  Keyframes
+//  Ex: @include keyframes(move-the-object) {
+//    0%   { left: 100px; }
+//    100% { left: 200px; }
+//  }    
+@mixin keyframes($animationName) {
+    @-webkit-keyframes #{$animationName} {
+        @content;
+    }
+    @-moz-keyframes #{$animationName} {
+        @content;
+    }
+    @-o-keyframes #{$animationName} {
+        @content;
+    }
+    @keyframes #{$animationName} {
+        @content;
+    }
+}
+
+//  Animation
+//  .object-to-animate {
+//    @include animation('move-the-object .5s 1', 'move-the-object-again .5s 1 .5s');
+//  }  
+@mixin animation($animate...) {
+    $max: length($animate);
+    $animations: '';
+
+    @for $i from 1 through $max {
+        $animations: #{$animations + nth($animate, $i)};
+
+        @if $i < $max {
+            $animations: #{$animations + ", "};
+        }
+    }
+    -webkit-animation: $animations;
+    -moz-animation:    $animations;
+    -o-animation:      $animations;
+    animation:         $animations;
+}
+
+
+

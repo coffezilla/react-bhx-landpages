@@ -1,0 +1,22 @@
+@import '../../helpers/mixins.scss';
+@import '../../helpers/animations.scss';
+
+
+.display-banner-u {
+    
+    
+    h1 {
+        color: white;
+        // font-size: 3.5rem;    
+
+    }
+
+    p {
+        font-weight: lighter;
+        color: white;
+        // line-height: 2rem;
+        // font-size: 1.2rem;    
+    }
+
+}
+

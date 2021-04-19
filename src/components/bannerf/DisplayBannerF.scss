@@ -1,0 +1,71 @@
+@import '../../helpers/mixins.scss';
+@import '../../helpers/animations.scss';
+
+
+.display-banner-f {
+
+    position: relative;
+    
+    &:before {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 273px;
+        left: 0px;
+        bottom: -1px;
+        background-image: url('/images/svg-bottom-wave-4.svg');
+        background-position: center bottom;
+        background-repeat: no-repeat;
+    }
+
+
+    h1 {
+        color: white;
+
+    }
+
+    h2 {
+        font-weight: normal;
+        color: white;
+        opacity: .9;      
+    }
+
+    p {
+        color: #fff;
+    }
+    
+    .form-signup--banner {
+
+        input {
+            background-color: white;
+            border: none;
+            padding: 13px 15px;
+            @include border-radius(5px);
+            // font-size: 0.9rem;
+
+            &::placeholder {
+                color: #c1c1c1;
+            }
+        }
+
+        button {
+            background-color: black;
+            border: none;
+            padding: 13px 15px;
+            @include border-radius(5px);
+            // font-size: 0.9rem;
+            color: white;
+            @include box-shadow(0px 5px 6px 0px #0000001f);
+            @include transition(background-color .3s);
+
+            &:hover {
+                background-color:#252525;
+            }
+
+        }
+    }
+
+
+}
+

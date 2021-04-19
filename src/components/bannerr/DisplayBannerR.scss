@@ -1,0 +1,114 @@
+@import '../../helpers/mixins.scss';
+@import '../../helpers/animations.scss';
+
+
+.display-banner-r {
+
+    h1 {
+        color: white;
+        // font-size: 3rem;        
+    }
+
+    p {
+        // font-size: 1.1rem;
+        color: white;
+        font-weight: normal;
+        // line-height: 2rem;        
+    }
+    
+
+    .wrapper-header--banner {
+
+        .info-date {
+            // font-size: 2.8rem;
+            font-weight: bolder;
+        }
+
+        .info-title {
+            // font-size: 1.8rem;
+            font-weight: normal;
+            // line-height: 2.5rem;
+        }
+
+        button {
+            border: none;
+            // font-size: 1.5rem;
+            color: white;
+            background-color: #F7273C;
+            // padding: 10px 25px;
+            padding: 1rem 2rem;
+        }
+
+        blockquote {
+            p {
+
+                font-size: 3rem;
+                font-weight: lighter;
+                line-height: 3.5rem;
+            }
+        }
+
+        cite {
+            font-size: 1rem;
+            color: white;
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        .wrapper-display {
+            p {
+                // font-size: 1.9rem;
+                // line-height: 2.5rem;
+                font-weight: lighter;
+            }
+        }
+    }
+
+    .wrapper-footer--banner  {
+        background-color: #D0D0D0;
+    }
+
+    .wrapper-form--signup {
+        background-color: white;
+    }
+
+    .form-signup--banner {
+
+        input {
+            width: 100%;
+            // padding: 10px 20px;
+            padding: 1rem 2rem;
+            background-color: white;
+            color: gray;
+            border: 1px solid gray;
+            margin-bottom: 10px;
+
+            &::placeholder {
+                color: #cacaca;
+            }            
+        }
+
+        button {
+            border: none;
+            width: 100%;
+            color: white;
+            background-color: #F7273C;
+            padding: 10px 20px;
+            padding: 1rem 2rem;
+            font-size: 1.2rem;
+        }
+    }
+
+
+
+    @media #{ $xs, $sm, $md } {  
+        .wrapper-header--banner {
+            button {
+                width: 100%;
+            }
+        }
+
+    }
+
+}
+

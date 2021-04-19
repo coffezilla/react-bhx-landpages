@@ -1,0 +1,87 @@
+@import '../../helpers/mixins.scss';
+@import '../../helpers/animations.scss';
+
+
+.display-banner-e {
+
+    position: relative;
+    &:before {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 95px;
+        left: 0px;
+        bottom: -1px;
+        background-image: url('/images/svg-bottom-circle.svg');
+        background-position: center bottom;
+    }
+
+    .container {
+        padding-bottom: 120px;
+    }
+
+    h1 {
+        color: white;
+    }
+
+    p {
+        color: white;
+        font-weight: normal;
+    }
+    
+    button.bt-primary {
+
+        background-color: transparent;
+        @include border-radius(30px);
+        background: transparent;
+        padding: 1rem 1.5rem;
+        border: 2px solid #fff;
+        color: white;        
+
+        &:hover {
+            background-color: #f3f3f3;
+            color: #673ab7;
+        }
+    }
+
+
+
+    .form-signup--banner {
+        background: white;
+        padding: 40px;
+
+        p {
+            color: #505050;
+        }
+
+        input {
+            width: 100%;
+            border: none;
+            border-bottom: 1px solid #dedede;
+            margin-bottom: 10px;
+            padding: 10px 0px;
+            
+            &::placeholder {
+                color: #d8d8d8;
+            }
+        }
+
+        button {
+            background: #61D418;
+            color: white;
+            @include border-radius(5rem);
+            @include transition(background-color .3s);
+            width: 100%;
+            padding: 1.4rem 2rem;
+            border: none;
+
+            &:hover {
+                background-color: #67e618;
+            }
+        }
+    }
+
+
+}
+

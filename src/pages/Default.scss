@@ -1,0 +1,96 @@
+@import '../helpers/mixins.scss';
+@import '../helpers/animations.scss';
+
+
+html { font-size: 62.5%; } /* =10px */
+body { 
+    
+    font-size: 1.6rem; 
+
+} /* =14px */
+
+@media #{ $xs, $sm, $md } {  
+    
+}
+p {
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+    @media #{ $xs } {  
+        font-size: 1.6rem;
+        line-height: 2.2rem;
+    }        
+}
+
+h1 {
+    &:last-child {
+        padding-bottom: 0px !important;
+        margin-bottom: 0px !important;
+    }
+    // xl+
+    font-size: 4.6rem;
+    @media #{ $md, $lg, $xl } {  
+        font-size: 4rem;
+    }
+    @media #{ $sm } {  
+        font-size: 3.6rem;
+    }
+    @media #{ $xs } {  
+        font-size: 3rem;
+    }    
+}
+h2 {
+    &:last-child {
+        padding-bottom: 0px !important;
+        margin-bottom: 0px !important;
+    }
+    // xl+
+    font-size: 3.2rem;
+    @media #{ $md, $lg, $xl } {  
+        font-size: 3rem;
+    }
+    @media #{ $sm } {  
+        font-size: 2.4rem;
+    }
+    @media #{ $xs } {  
+        font-size: 1.7rem;
+    }    
+}
+
+h3 {
+    &:last-child {
+        padding-bottom: 0px !important;
+        margin-bottom: 0px !important;
+    }
+    // xl+
+    font-size: 4rem;
+    @media #{ $md, $lg, $xl } {  
+        font-size: 3rem;
+    }
+    @media #{ $sm } {  
+        font-size: 2rem;
+    }
+    @media #{ $xs } {  
+        font-size: 1.2rem;
+    }    
+}
+
+
+h4, h5, h6 {
+    &:last-child {
+        padding-bottom: 0px !important;
+        margin-bottom: 0px !important;
+    }
+    // xl+
+    font-size: 3rem;
+    @media #{ $md, $lg, $xl } {  
+        font-size: 3rem;
+    }
+    @media #{ $sm } {  
+        font-size: 2rem;
+    }
+    @media #{ $xs } {  
+        font-size: 1.2rem;
+    }    
+}
+
+

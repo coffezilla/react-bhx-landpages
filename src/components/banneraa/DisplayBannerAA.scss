@@ -1,0 +1,79 @@
+@import '../../helpers/mixins.scss';
+@import '../../helpers/animations.scss';
+
+
+.display-banner-aa {
+
+    position: relative;
+    
+    &:before {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 543px;
+        left: 0px;
+        bottom: -1px;
+        background-image: url('/images/svg-bottom-triangule-3.svg');
+        background-position: center bottom;
+        background-repeat: no-repeat;
+    }
+
+    h1 {
+        // font-size: 4rem;
+        font-weight: bolder; 
+    }
+
+    p {
+        // font-size: 1.2rem;
+        font-weight: normal;
+        // line-height: 2rem;        
+    }
+    
+
+
+    button.bt-banner-primary {
+        @include border-radius(35px);
+        padding: 1rem 2rem;
+        // font-size: 0.9rem;
+        background-color: black;
+        color: #ffffff;
+        border: none;
+
+        &:hover {
+            background-color: #ffc107;
+            color: black;
+        }
+    }
+
+    button.bt-banner-secondary {
+        @include border-radius(35px);
+        padding: 1rem 2rem;
+        // font-size: 0.9rem;
+        background: transparent;
+        color: #313132;
+        border: none;
+        &:hover {
+            background-color: #eeeeee;
+        }
+    }
+
+    .list-group-item {
+        padding: 0px;
+        margin: 0;
+
+        span {
+            color: #a5a5a5;
+        }
+    }
+    
+
+    h1,h2,h3,h4,h5,h6,p {
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    
+
+}
+

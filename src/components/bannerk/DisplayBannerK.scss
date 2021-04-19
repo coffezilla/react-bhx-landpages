@@ -1,0 +1,90 @@
+@import '../../helpers/mixins.scss';
+@import '../../helpers/animations.scss';
+
+
+.display-banner-k {
+
+
+
+    h1 {
+        color: white;
+        // font-size: 3rem;        
+    }
+
+    p {
+        // font-size: 1rem;
+        opacity: .9;
+        color: white;
+        font-weight: normal;
+        // line-height: 2rem;        
+    }
+    
+    button.bt-download {
+        border: none;
+        padding: 0;
+        // padding: 1rem 2rem;
+        background-color: transparent;
+        border: 2px solid transparent;
+        @include border-radius(10px);
+        @include transition(border-color .3s);
+    
+        &:hover {
+            border: 2px solid #ffffff54;
+            overflow: hidden;
+        }
+    }
+
+
+    .wrapper-header--banner {
+        padding: 10px 0px 140px;
+    }
+
+
+    .wrapper-footer--banner {
+        background-color: white;
+
+        img.spotlight {
+            margin-top: -180px;
+        }
+
+        ul.wrapper-list--features {
+            list-style-type: none;
+            padding: 0px;
+            margin: 0px;
+
+            li {
+                margin-bottom: 10px;
+
+                img {
+                    margin-bottom: 15px;
+                }
+
+                h3 {
+                    // font-size: 1rem;
+                }
+                
+                p {
+                    // font-size: 0.9rem;
+                    // line-height: 1.6rem;
+                    color: gray;                
+                }
+            }
+        }
+    }
+
+    @media #{ $xs, $sm, $md } {  
+
+        .wrapper-header--banner {
+            padding: 0px;
+        }
+
+
+        img.spotlight {
+            height: 20rem;
+            margin-top: 0px !important;
+        }
+
+    }     
+
+}
+

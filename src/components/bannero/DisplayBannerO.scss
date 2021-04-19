@@ -1,0 +1,89 @@
+@import '../../helpers/mixins.scss';
+@import '../../helpers/animations.scss';
+
+
+.display-banner-o {
+
+    h1 {
+        color: #7A5263;
+        font-weight: bolder;
+        // font-size: 3rem;        
+
+        span {
+            color: #BE624A;
+        }
+    }
+
+    p {
+        // font-size: 1.1rem;
+        color: #7A5263;
+        font-weight: normal;
+        // line-height: 2rem;        
+    }
+    
+
+    .wrapper-bannner--cover {
+        background-image: url('/images/background-dev.jpg');
+        background-position: center center;
+        background-size: cover;
+        height: initial;
+    }
+    
+    
+    .form-banner--signup {
+        padding: 0px;
+        
+        p {
+            // font-size: 1rem;
+            // line-height: 1.5rem;
+            color: #505050;
+
+            span {
+                // font-size: .8rem;
+                // line-height: 1rem;
+                padding: 0px;
+                margin: 0px;
+            }
+        }
+
+        i {
+            // font-size: 2rem;
+        }
+
+
+
+        input {
+            width: 100%;
+            border: none;
+            padding: 10px 15px;
+            @include border-radius(5px);
+            
+            &::placeholder {
+                color: #d8d8d8;
+            }
+        }
+
+        button {
+            width: 100%;
+            border: none;
+            padding: 10px 20px;
+            color: white;
+            @include border-radius(5px);
+            background-color: #EDCA00;
+
+            &:hover {
+                background-color: #fad817;
+            }
+        }
+    }
+
+    @media #{ $xs, $sm, $md } {  
+
+        .wrapper-bannner--cover {
+            height: 200px;
+        }
+
+    }   
+
+}
+

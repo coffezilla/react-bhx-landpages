@@ -1,0 +1,14 @@
+@import '../../helpers/mixins.scss';
+@import '../../helpers/animations.scss';
+
+
+.component-primary-banner-h {
+    
+    background-color: #fff;
+    background-image: url('/images/background-dev.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;    
+
+}
+

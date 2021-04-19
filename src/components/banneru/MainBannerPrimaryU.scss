@@ -1,0 +1,12 @@
+@import '../../helpers/mixins.scss';
+@import '../../helpers/animations.scss';
+
+
+.component-primary-banner-u {
+    
+
+    background-color: #653992;
+    @include linear-hgradient(#653992, #F63391);
+
+}
+

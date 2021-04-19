@@ -1,0 +1,65 @@
+@import '../../helpers/mixins.scss';
+@import '../../helpers/animations.scss';
+
+
+.display-banner-z {
+
+    
+    h1 {
+        // font-size: 1.2rem;    
+        color: #00D4AE;
+    }
+
+    h2 {
+        color: #2E2E2E;
+        // font-size: 2.5rem;
+    }
+
+    p {
+        // font-size: 1.4rem;
+        font-weight: normal;
+        // line-height: 2.3rem;
+        color: gray;     
+    }
+    
+    img {
+        width: 100%;
+    }
+
+    button.bt-primary--banner { 
+        @include border-radius(5px);
+        padding: 1rem 2rem;
+        // font-size: 1.1rem;
+        background-color: #00D4AE;
+        color: white;
+        border: none;
+
+        &:hover {
+            background-color: #39dd93;
+        }
+    }
+
+    button.bt-secondary--banner {
+        @include border-radius(5px);
+        padding: 1rem 2rem;
+        // font-size: 1.1rem;
+        background-color: white;
+        border: 2px solid #00d4ae;
+        color: #00d4ae;        
+
+        &:hover {
+            background-color: #eefffc;
+        }
+    }
+
+    .list-group-item {
+        padding: 0px;
+        margin: 0;
+
+        span {
+            color: #a5a5a5;
+        }
+    }
+    
+}
+

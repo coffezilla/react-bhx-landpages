@@ -1,0 +1,55 @@
+@import '../../helpers/mixins.scss';
+@import '../../helpers/animations.scss';
+
+
+.display-banner-c {
+    
+    h1 {
+        color: #4A4A4A;
+        font-weight: lighter;    
+        @media #{ $xxl } {  
+            font-size: 3.4rem;    
+        }
+            
+    }
+
+    p {
+        
+        color: #A0A0A0;
+        font-weight: normal;
+        @media #{ $xxl } {  
+            // line-height: 2rem;        
+            font-size: 1.7rem;
+        }
+    }
+    
+    button.bt-banner-primary {
+        border: none;
+        padding: 0;
+        background-color: transparent;
+        border: 2px solid transparent;
+        @include border-radius(30px);
+        background: white;
+        padding: 0.8rem 1.6rem;
+        border: 1px solid #bdbdbd;
+        font-size: 1.4rem;
+        color: #777777;
+
+        &:hover {
+            background-color: #f3f3f3;
+        }
+    }
+
+    .list-group-item {
+        padding: 0px;
+        margin: 0;
+
+        span {
+            color: #a5a5a5;
+        }
+    }
+
+
+
+}
+

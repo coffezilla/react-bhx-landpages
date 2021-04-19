@@ -1,0 +1,40 @@
+@import '../../helpers/mixins.scss';
+@import '../../helpers/animations.scss';
+
+
+.display-banner-v {
+
+    h1 {
+        font-weight: bolder;
+        color: white;
+        // font-size: 3.5rem;        
+    }
+
+    p {
+        // font-size: 1.4rem;
+        color: white;
+        font-weight: normal;
+        // line-height: 2rem;
+        
+        span {
+            // font-size: .9rem;
+        }
+    }
+    
+    button.bt-download {
+        border: none;
+        padding: 0;
+        background-color: transparent;
+        border: 2px solid transparent;
+        @include border-radius(10px);
+        @include transition(border-color .3s);
+    
+        &:hover {
+            border: 2px solid #ffffff54;
+            overflow: hidden;
+        }
+    }
+
+
+}
+
