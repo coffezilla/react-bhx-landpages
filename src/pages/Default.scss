@@ -182,6 +182,13 @@ h4, h5, h6 {
 //
 .component-nav--main {
 
+        
+    background-color: white;
+    border-bottom: 1px solid #d0d0d0;    
+    padding-top: 0px;
+    padding-bottom: 0px;
+
+
     form {
         input {
             font-size: 1.6rem;
@@ -192,11 +199,6 @@ h4, h5, h6 {
         }
     }    
 
-    background-color: white;
-    border-bottom: 1px solid #d0d0d0;    
-    padding-top: 0px;
-    padding-bottom: 0px;
-    
     .navbar-brand {
         img {
             height: 2.4rem;

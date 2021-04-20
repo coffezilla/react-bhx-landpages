@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
+import ContentCards from '../components/ContentCards'; 
 import imgLogo from '../images/logo.png';
 
 // Style
@@ -17,8 +18,8 @@ function Default () {
 
 <div className="component-nav--main">
 
-    <div className="container-lg-fluid container-lg p-0">
-        <nav className="navbar navbar-expand-md px-4 px-md-3 px-lg-0 py-2 py-md-0 py-lg-0  justify-content-between">
+    <div className="container-lg-fluid container-lg p-0 ">
+        <nav className="navbar  navbar-expand-md px-4 px-md-3 px-lg-0 py-2 py-md-0 py-lg-0  justify-content-between">
             
             <a className="navbar-brand py-3 py-md-0" href="/"><img src={imgLogo} alt="Logo" /></a>                        
 
@@ -54,9 +55,9 @@ function Default () {
                 </div>
 
                 <form action="/" className="form-inline my-2 my-lg-0">
-                        <input className="form-control mr-sm-2" type="search" placeholder="Busca nome..." aria-label="Busca"/>
-                        <button className="btn btn-outline-success my-2 my-sm-0" type="submit">Busca</button>
-                    </form>
+                    <input className="form-control mr-sm-2" type="search" placeholder="Busca nome..." aria-label="Busca"/>
+                    <button className="btn btn-outline-success my-2 my-sm-0" type="submit">Busca</button>
+                </form>
 
             </div>
         </nav>
@@ -66,109 +67,9 @@ function Default () {
 
 
 
-            <section className="container-lg my-5">
-                <div className="row">
-                    <div className="col-12 col-lg-6 col-xl-4 wrapper-card--preview mb-5">
-                        <div className="content-card">
-                            <div className="card-cover">
+        <ContentCards />
 
-                            </div>
-                            <div className="card-title p-5">
-                                <div className="row align-items-center text-left justify-content-between">
-                                    <div className="col-auto">
-                                        <h2>Banner A</h2> 
-                                        <p>Banner básico</p>
-                                    </div>
-                                    <div className="col-auto">
-                                    <Link to="/banner-a" className="btn-default">Preview</Link>
-                                    </div>
-                                </div>
-                            </div> 
-                        </div>
-                    </div>
-                    <div className="col-12 col-lg-6 col-xl-4 wrapper-card--preview mb-5">
-                        <div className="content-card">
-                            <div className="card-cover">
-
-                            </div>
-                            <div className="card-title p-5">
-                                <div className="row align-items-center text-left justify-content-between">
-                                    <div className="col-auto">
-                                        <h2>Banner B</h2> 
-                                        <p>Banner básico</p>
-                                    </div>
-                                    <div className="col-auto">
-                                        <Link to="/banner-b" className="btn-default">Preview</Link>
-                                    </div>
-                                </div>
-                            </div> 
-                        </div>
-                    </div>
-                    <div className="col-12 col-lg-6 col-xl-4 wrapper-card--preview mb-5">
-                        <div className="content-card">
-                            <div className="card-cover">
-
-                            </div>
-                            <div className="card-title p-5">
-                                <div className="row align-items-center text-left justify-content-between">
-                                    <div className="col-auto">
-                                        <h2>Banner C</h2> 
-                                        <p>Banner básico</p>
-                                    </div>
-                                    <div className="col-auto">
-                                        <Link to="/banner-c" className="btn-default">Preview</Link>
-                                    </div>
-                                </div>
-                            </div> 
-                        </div>
-                    </div>
-                    <div className="col-12 col-lg-6 col-xl-4 wrapper-card--preview mb-5">
-                        <div className="content-card">
-                            <div className="card-cover">
-
-                            </div>
-                            <div className="card-title p-5">
-                                <div className="row align-items-center text-left justify-content-between">
-                                    <div className="col-auto">
-                                        <h2>Banner D</h2> 
-                                        <p>Banner básico</p>
-                                    </div>
-                                    <div className="col-auto">
-                                        <Link to="/banner-d" className="btn-default">Preview</Link>
-                                    </div>
-                                </div>
-                            </div> 
-                        </div>
-                    </div>
-                    <div className="col-12 col-lg-6 col-xl-4 wrapper-card--preview mb-5">
-                        <div className="content-card">
-                            <div className="card-cover">
-
-                            </div>
-                            <div className="card-title p-5">
-                                <div className="row align-items-center text-left justify-content-between">
-                                    <div className="col-auto">
-                                        <h2>Banner E</h2> 
-                                        <p>Banner básico</p>
-                                    </div>
-                                    <div className="col-auto">
-                                        <Link to="/banner-e" className="btn-default">Preview</Link>
-                                    </div>
-                                </div>
-                            </div> 
-                        </div>
-                    </div>
-
-
-                    
-
-
-
-
-
-
-                </div>
-            </section>
+            
             
 
             {/* <h1>Landpages template</h1> */}
