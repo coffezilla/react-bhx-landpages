@@ -1,6 +1,6 @@
 import React from 'react';
 import '../bannere/DisplayBannerE.scss';
-
+ 
 
 function DisplayBannerE() {
   return <>

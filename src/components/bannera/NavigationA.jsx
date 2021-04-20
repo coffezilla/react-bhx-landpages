@@ -8,7 +8,7 @@ function NavigationA() {
 
 
                 <div className="container-lg-fluid container-md p-0">
-                    <nav className="navbar navbar-expand-md px-4 px-md-3 px-lg-0 py-0 py-md-2 py-lg-4 justify-content-between">
+                    <nav className="navbar navbar-expand-md px-4 px-md-3 px-lg-0 py-0 py-lg-2 py-xl-4 justify-content-between">
                         
                         <a className="navbar-brand py-3 py-md-0" href="/"><img src={Logo} alt="Logo" /></a>                     
 

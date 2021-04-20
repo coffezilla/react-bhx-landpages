@@ -6,10 +6,10 @@ import smartphoneMockup from '../../images/iphone-mockup.png';
 
 function DisplayBannerA() {
   return <>
-            <div className="display-banner-a py-xl-5">
+            <div className="display-banner-a py-xl-2">
                 <div className="container-fluid container-md">
                     <div className="row justify-content-center align-items-center py-md-2 py-lg-5">
-                        <div className="col-12 col-md-4 mx-auto order-2 order-md-1 text-center text-md-left">
+                        <div className="col-12 col-md-4 col-xl-3 mx-auto order-2 order-md-1 text-center text-md-left">
                             <img src={smartphoneMockup} className="img-fluid" alt="Logo" />
                         </div>
 
