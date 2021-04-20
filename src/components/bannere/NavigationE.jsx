@@ -7,7 +7,7 @@ function NavigationE() {
             <div className="component-nav-e">
 
             <div className="container-lg-fluid container-lg p-0">
-                    <nav className="navbar navbar-expand-md px-4 px-md-3 px-lg-0 py-0 py-md-2 py-lg-4  justify-content-between">
+                    <nav className="navbar navbar-expand-md px-4 px-md-3 px-lg-0 py-2 py-md-2 py-lg-4  justify-content-between">
                         
                         <a className="navbar-brand py-3 py-md-0" href="/"><img src={imgLogo} alt="Logo" /></a>                        
 

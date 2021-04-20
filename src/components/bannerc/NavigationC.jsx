@@ -6,7 +6,7 @@ function NavigationC() {
   return <>
             <div className="component-nav-c">
                 <div className="container-fluid p-0 px-md-5">
-                    <nav className="navbar navbar-expand-md px-4 px-md-3 px-lg-0 py-0 py-md-2 py-lg-4  justify-content-between">
+                    <nav className="navbar navbar-expand-md px-4 px-md-3 px-lg-0 py-2 py-md-2 py-lg-4  justify-content-between">
                         
                         <a className="navbar-brand py-3 py-md-0" href="/"><img src={Logo} alt="Logo" /></a>                        
 

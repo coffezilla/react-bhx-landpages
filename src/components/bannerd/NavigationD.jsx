@@ -10,7 +10,7 @@ function NavigationD() {
 
                 
             <div className="container-fluid p-0">
-                    <nav className="navbar navbar-expand-lg px-3 px-lg-5 py-0 py-md-2 py-lg-4  justify-content-between">
+                    <nav className="navbar navbar-expand-lg px-3 px-lg-5 py-2 py-md-2 py-lg-4  justify-content-between">
                         
                         <a className="navbar-brand py-3 py-lg-0" href="/"><img src={imgLogo} alt="Logo" /></a>                        
 
