@@ -9,7 +9,7 @@ function DisplayBannerB() {
   return <>
             <div className="display-banner-b py-0 py-md-5 py-xl-5">
                 <div className="container">
-                    <div className="row justify-content-center align-items-start py-lg-0 py-xl-5">
+                    <div className="row justify-content-center align-items-md-center align-items-lg-start py-lg-0 py-xl-5">
                         <div className="col-12 col-md-5 col-lg-4 col-xl-5 mx-auto my-3 my-md-0 order-2 order-md-1 text-center text-md-left">
                             <img src={smartphoneMockup} className="img-fluid" alt="Logo" />
                         </div>
