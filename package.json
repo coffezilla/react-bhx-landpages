@@ -1,13 +1,17 @@
 {
   "name": "react-landpage-demos",
   "version": "0.1.0",
-  "homepage": ".",
+  "homepage": "/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.10",
     "@testing-library/react": "^11.2.6",
     "@testing-library/user-event": "^12.8.3",
     "axios": "^0.21.1",
+    "bootstrap": "^4.6.0",
+    "bootstrap-icons": "^1.4.1",
+    "jquery": "^3.6.0",
+    "jquery-slim": "^3.0.0",
     "node-sass": "^5.0.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",

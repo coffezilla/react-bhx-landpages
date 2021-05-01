@@ -100,239 +100,36 @@ h4, h5, h6 {
 }
 
 
-// 
-.wrapper-card--preview {
-
-    .content-card {
-        border: 1px solid #ececec;
-        @include border-radius(0.5rem); 
-        overflow: hidden;;
-    }
-
-    .card-cover {
-        background-color: red;
-        height: 200px;
-        width: 100%;
-    }
-
-    .card-title {
-        background-color: white;
-        margin: 0;
-        text-align: center;
-        h2 {
-            font-size: 2rem;
-            margin: 0;
-        }
-
-        p {
-            font-size: 1.4rem;
-            color: gray;
-            margin: 0;
-        }
-
-        a.btn-default {
-            text-decoration: none;
-            background: #03a9f4;
-            color: white;
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 0.3rem;
-            font-size: 1.4rem;
-            
-            &:hover {
-                background-color: #2bb9f9;
-            }
-        }
-        
-    }
-}
 
 
 
 
 
-.navbar--main {
-    background-color: white;
-    border-bottom: 1px solid #d0d0d0;    
-    padding-top: 0px;
-    padding-bottom: 0px;
 
-    a.nav-link {
-        padding: 10px;
-    }
+// .navbar--main {
+//     background-color: white;
+//     border-bottom: 1px solid #d0d0d0;    
+//     padding-top: 0px;
+//     padding-bottom: 0px;
 
-    a.active {
-        border-bottom: 2px solid red;
-    }
+//     a.nav-link {
+//         padding: 10px;
+//     }
 
-    form {
-        input {
-            font-size: 1.6rem;
-        }
+//     a.active {
+//         border-bottom: 2px solid red;
+//     }
 
-        button {
-            font-size: 1.6rem;
-        }
-    }
-}
+//     form {
+//         input {
+//             font-size: 1.6rem;
+//         }
 
-
-
-
-//
-.component-nav--main {
-
-        
-    background-color: white;
-    border-bottom: 1px solid #d0d0d0;    
-    padding-top: 0px;
-    padding-bottom: 0px;
+//         button {
+//             font-size: 1.6rem;
+//         }
+//     }
+// }
 
 
-    form {
-        input {
-            font-size: 1.6rem;
-        }
 
-        button {
-            font-size: 1.6rem;
-        }
-    }    
-
-    .navbar-brand {
-        img {
-            height: 2.4rem;
-            width: auto;
-        }
-    }
-
-    li.nav-item {
-
-        a.nav-link {
-            color: #636363;
-            opacity: .8;
-            padding-top: 2rem;
-            padding-bottom: 2rem;
-
-            &:hover {
-                opacity: 1;
-            }
-        }
-
-        a.active {
-            border-bottom: 2px solid red;
-        }
-
-        span.navbar-text {
-            display: inline-block;
-            padding-top: .5rem;
-            padding-bottom: .5rem;
-            background: #969696;
-            padding: 0.1rem 1.1rem;
-            border-radius: 5rem;
-            color: white;
-            font-size: 1.4rem;   
-            margin: 1rem 0rem;         
-        }
-
-    }
-    
-
-    // BUG: Bootstrap .collapse add flex-grow:1 so if you don't redefine grow, the justify-content-x of the nav will not set appropriately
-    .collapse {
-        flex-grow: initial;
-    }
-    
-    @media #{ $xs, $sm } {  
-
-        .navbar {
-            padding: 0px 2rem;
-
-            input {
-                // width: 100%;
-            }
-
-            button {
-                // width: 100%;
-            }
-
-            .navbar-brand {
-                padding: 0;
-            }
-
-            .navbar-toggler {
-                color: gray;
-                padding: 0px;
-                font-size: 2rem;
-                .navbar-toggler-open-icon {
-                    display: block;
-                }
-                .navbar-toggler-close-icon {
-                
-                    display: none;
-                }            
-            }
-            
-            .navbar-toggler.collapsed  {
-                .navbar-toggler-open-icon {
-                    display: none;
-                }
-                .navbar-toggler-close-icon {
-                    
-                    display: block;
-                }                 
-            }        
-
-            .navbar-collapse {
-
-
-                ul.nav {
-
-                    margin: 0rem;
-                    padding: 0;
-                    width: 100%;
-                    
-                    
-                    li.nav-item {
-                        width: 100%;
-                        border-bottom: 1px solid #dcdcdc;
-                        
-                        a.nav-link {
-                            font-size: 1.4rem;
-                            margin: 0px !important;
-                            background: transparent;
-                            color: gray;
-                            padding: 0.7rem 0px;
-                            border-radius: 0;
-                            border: none;
-                            
-                            &:hover {
-                                background-color: inherit;
-                            }
-                            
-                            &:active {
-                                color: gray;
-                            }
-                            
-                        }
-                        
-
-                    }
-                    
-                }   
-            }
-
-            .navbar {
-                // background-color: #00000014;
-                &:last-child {
-                    
-                    li {
-                        &:last-child {
-                            border: none !important;
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
