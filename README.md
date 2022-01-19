@@ -1,6 +1,5 @@
 # Getting started with this structure
 - Created by Renato Santos
-- Contact: renato@bhxsites.com.br
 
 ## What is this?
 This is a very basic structure to create websites using **ReactJS 17.0.2**.
